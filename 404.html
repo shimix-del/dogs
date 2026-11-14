@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 — Lost the Scent | Kennel &amp; Clinic Kenya</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    .notfound-container {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 2rem;
+      background-color: var(--color-bone);
+    }
+    .chasing-tail-animation {
+      width: 220px;
+      height: 220px;
+      margin-bottom: 2rem;
+      position: relative;
+    }
+    .spinning-dog-svg {
+      width: 100%;
+      height: 100%;
+      animation: spin-tail 2.2s cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite;
+      transform-origin: center;
+    }
+    @keyframes spin-tail {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    .bone-treat-btn {
+      margin-top: 1.5rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="grain-overlay" aria-hidden="true"></div>
+
+  <div class="notfound-container">
+    <div class="chasing-tail-animation" aria-hidden="true">
+      <!-- Playful Dog Chasing Its Tail SVG Illustration -->
+      <svg class="spinning-dog-svg" viewBox="0 0 160 160" fill="none">
+        <circle cx="80" cy="80" r="70" stroke="#C8553D" stroke-width="2" stroke-dasharray="6 6" opacity="0.4"/>
+        <!-- Dog Body Curved in Circle -->
+        <path d="M40,80 C40,45 70,30 95,40 C120,50 130,85 115,110 C100,135 60,135 45,115 C35,100 40,85 55,75 C70,65 90,75 88,92 C86,105 75,108 68,102" 
+              stroke="#1F3A2E" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+        <!-- Snout & Ear -->
+        <circle cx="95" cy="40" r="14" fill="#1F3A2E"/>
+        <path d="M102,32 Q115,28 112,42 Z" fill="#C8553D"/>
+        <!-- Nose -->
+        <circle cx="92" cy="34" r="3.5" fill="#E9C46A"/>
+        <!-- Wagging Tail End -->
+        <path d="M68,102 Q60,118 72,125" stroke="#C8553D" stroke-width="7" stroke-linecap="round"/>
+        <!-- Motion Sparkles -->
+        <circle cx="35" cy="60" r="3" fill="#E9C46A"/>
+        <circle cx="125" cy="65" r="3" fill="#E9C46A"/>
+        <circle cx="110" cy="130" r="3" fill="#E9C46A"/>
+      </svg>
+    </div>
+
+    <div class="status-chip" style="margin-bottom: 1rem;">
+      <span class="status-pulse"></span>
+      <span>404: Lost the Trail</span>
+    </div>
+
+    <h1 class="headline-giant" style="font-size: clamp(2.5rem, 6vw, 4.5rem); margin-bottom: 1rem;">
+      Chasing our own <em class="italic-serif" style="color: var(--color-terracotta);">tail.</em>
+    </h1>
+
+    <p style="max-width: 500px; color: var(--color-charcoal-muted); font-size: 1.15rem; line-height: 1.6; margin-bottom: 2rem;">
+      The page you were sniffing for isn't here. It might have wandered off past Lang'ata Road, or the scent went cold.
+    </p>
+
+    <div style="display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center;">
+      <a href="index.html" class="btn btn-primary" style="padding: 0.9rem 2.2rem;">
+        <span>Take me back to the kennel</span>
+        &rarr;
+      </a>
+      <a href="https://wa.me/254712345678" class="btn btn-whatsapp" target="_blank" rel="noopener noreferrer">
+        <span>WhatsApp Dr. Nduta</span>
+      </a>
+    </div>
+
+    <div class="handwritten-note" style="margin-top: 2.5rem; transform: rotate(-2deg); font-size: 1.3rem;">
+      "even champions make a wrong turn sometimes!"
+    </div>
+  </div>
+</body>
+</html>
